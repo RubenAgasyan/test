@@ -22,11 +22,13 @@ h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
+    
 }
 
 nav ul li a {
@@ -34,6 +36,7 @@ nav ul li a {
     color: white;
     font-weight: bold;
     transition: 0.3s;
+    
 }
 
 nav ul li a:hover {
@@ -91,6 +94,27 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.fixed-buttons{
-    position:fixed;
+/* Стрелка вверх */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background-color: #d4a5a5;
+    color: white;
+    padding: 25px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: none; /* Скрыта по умолчанию */
+    transition: background-color 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: #f4b6b2;
+}
+
+/* Показываем стрелку, когда прокручена страница */
+.show {
+    display: block;
 }
